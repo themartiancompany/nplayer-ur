@@ -1,0 +1,21 @@
+pkgbase = nplayer
+	pkgdesc = Seamlessly reproduce multimedia on many devices as if they were one.
+	pkgver = 0.0.0.0.0.0.0.0.0.0.0.0.0.1.1
+	pkgrel = 1
+	url = https://github.com/themartiancompany/nplayer
+	arch = any
+	license = AGPL3
+	checkdepends = shellcheck
+	makedepends = make
+	depends = at
+	depends = dynssh
+	depends = libcrash-bash
+	depends = media-tools
+	depends = rsync
+	depends = android-utils
+	depends = termux-api
+	source = nplayer-2c43250c03f18acc35430164e661f05b8ac0ee0f.zip::https://github.com/themartiancompany/nplayer/archive/2c43250c03f18acc35430164e661f05b8ac0ee0f.zip
+	validpgpkeys = 97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9
+	sha256sums = d42dfd907c1e1c793e92fb061146ab3fb5dd482388049705b70b21c2fcf7238f
+
+pkgname = nplayer
