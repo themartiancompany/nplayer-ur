@@ -32,15 +32,16 @@ depends=(
 _os="$( \
   uname \
     -o)"
-[[ "${_os}" != "GNU/Linux" ]] && \
-[[ "${_os}" == "Android" ]] && \
-  depends+=(
-  )
 optdepends=(
 )
 [[ "${_os}" != "GNU/Linux" ]] && \
 [[ "${_os}" == "Android" ]] && \
+  depends+=(
+  )
+[[ "${_os}" != "GNU/Linux" ]] && \
+[[ "${_os}" == "Android" ]] && \
   optdepends+=(
+    "termux-api: to open the file using the Android system player"
   )
 makedepends=(
   make
